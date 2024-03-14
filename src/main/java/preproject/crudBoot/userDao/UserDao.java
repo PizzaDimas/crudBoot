@@ -1,0 +1,21 @@
+package preproject.crudBoot.userDao;
+
+
+import preproject.crudBoot.modelDao.UserEntity;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface UserDao {
+    void add(UserEntity user);
+
+    List<UserEntity> getAll();
+
+    Optional<UserEntity> getById(long id);
+
+    void update(UserEntity user);
+
+    void removeById(long id);
+
+
+}
